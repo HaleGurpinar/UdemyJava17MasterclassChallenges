@@ -85,5 +85,16 @@ We're going to use the MealOrder class, to hide some of the implementation detai
 
 This means we're going to use encapsulation techniques on MealOrder and Item.
 
+## Bills Burger Challenge with the Bonus - the DeluxeBurger
+
+We created all the classes for a default meal order, and provided methods for adding toppings and customizing a drink size.
+
+Now, we want to create a burger subclass, the DeluxeBurger, which has two additional toppings, so a total of five.
+
+![image](https://github.com/HaleGurpinar/UdemyJava17MasterclassChallenges/assets/106753721/ea18fde6-ed30-4c53-91e0-abd8c797bda4)
+
+
+
+
 
 
