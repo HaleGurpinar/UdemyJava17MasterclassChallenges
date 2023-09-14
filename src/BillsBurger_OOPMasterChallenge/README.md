@@ -50,14 +50,6 @@ You need a drink, and side item.
 - The drink should have at least a type, size and price, and the price of the drink should change for each size.
 - The side item needs at least a type and price.
 
-You need burgers.
-Every hamburger should have a burger type, a base price, and up to a maximum of three extra toppings.
-The constructor should include only the burger type and price.
-Extra Toppings on a burger need to be added somehow, and priced according to their type.
-The deluxe burger bonus.
-Create a deluxe burger meal, with a deluxe burger, that has a set price, so that any additional toppings do not change the price.
-The deluxe burger should have room for an additional two toppings.
-
 ## Initial Design Considerations
 
 So here is the diagram of my design.
