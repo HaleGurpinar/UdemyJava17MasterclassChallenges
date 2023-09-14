@@ -73,3 +73,17 @@ Every Item has a name, type, price or base price, and a size.
 
 ![image](https://github.com/HaleGurpinar/UdemyJava17MasterclassChallenges/assets/106753721/11d6fd3b-9ad2-4928-808d-7ae6c49090b5)
 
+Item has the method getBasePrice, which is really just a getter method for the price, but the name is more descriptive.
+
+Item also has getAdjustedPrice, and the printItem method.
+
+These methods will exhibit different behavior, based on the runtime type, and we know that's polymorphism.
+
+For the burger, the toppings or extras are individual attributes, and also have the type Item.
+
+We're going to use the MealOrder class, to hide some of the implementation details from the calling code.
+
+This means we're going to use encapsulation techniques on MealOrder and Item.
+
+
+
