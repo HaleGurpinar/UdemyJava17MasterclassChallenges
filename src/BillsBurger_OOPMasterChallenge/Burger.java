@@ -31,9 +31,9 @@ public class Burger extends Item{
         };
     }
     public void addToppings(String extra1, String extra2, String extra3){
-        this.extra1= new Item("Topping",extra1,getExtraPrice(extra1));
-        this.extra2= new Item("Topping",extra2,getExtraPrice(extra2));
-        this.extra3= new Item("Topping",extra3,getExtraPrice(extra3));
+        this.extra1= new Item("TOPPING",extra1,getExtraPrice(extra1));
+        this.extra2= new Item("TOPPING",extra2,getExtraPrice(extra2));
+        this.extra3= new Item("TOPPING",extra3,getExtraPrice(extra3));
     }
 
     public void printItemizedList(){

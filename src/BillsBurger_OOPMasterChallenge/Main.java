@@ -30,7 +30,7 @@ public class Main {
 //        secondMeal.setDrinkSize("SMALL");
 //        secondMeal.printItemizedList();
 
-        MealOrder deluxeMeal= new MealOrder("deluxe ","7-up","chili");
+        MealOrder deluxeMeal= new MealOrder("deluxe","7-up","chili");
        // deluxeMeal.addBurgerToppings("MUSHROOM","BACON","LETTUCE","CHEESE","MAYO");
         deluxeMeal.addBurgerToppings("MUSHROOM","BACON","LETTUCE","CHEESE","MAYO");
         deluxeMeal.setDrinkSize("SMALL");
