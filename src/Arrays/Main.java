@@ -100,8 +100,11 @@ public class Main {
     public static void main(String[] args) {
 
         int[] array={12,25,5,84,36};
+        int[] array2={37,81,17,56,3};
         System.out.println("Array-->"+Arrays.toString(array));
         reverse(array);
+        System.out.println("Array-->"+Arrays.toString(array2));
+        System.out.println("Reversed Array2-->"+Arrays.toString(reverseCopy(array2)));
 
     }
     public static void reverse(int[] array){
@@ -114,6 +117,15 @@ public class Main {
 
         }
         System.out.println("Reversed Array-->"+ Arrays.toString(array));
+    }
+
+    private static int[] reverseCopy(int[] array){
+        int[] reversedArray= new int[array.length];
+        int maxInddex= array.length-1;
+        for (int el:array) {
+            reversedArray[maxInddex--]=el;
+        }
+        return reversedArray;
     }
     }
 
