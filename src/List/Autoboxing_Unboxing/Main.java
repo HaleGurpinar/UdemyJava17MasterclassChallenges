@@ -56,4 +56,7 @@ class Bank{
             System.out.println("New Customer added: "+ customer);
         }
     }
+    public  void addTransaction(String name, double transactionAmount){
+
+    }
 }
