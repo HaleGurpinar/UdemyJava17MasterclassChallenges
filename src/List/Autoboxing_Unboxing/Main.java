@@ -20,6 +20,14 @@ public class Main {
         Bank bank = new Bank("Chase");
         bank.addNewCustomer("Jane A",500.0);
         System.out.println(bank);
+
+        bank.addTransaction("Jane A",-10.25);
+        bank.addTransaction("jane a",-75.01);
+        bank.printStatement("Jane a");
+
+        bank.addNewCustomer("bob s",25);
+        bank.addTransaction("Bob S",100);
+        bank.printStatement("Bob S");
     }
 }
 
@@ -57,6 +65,22 @@ class Bank{
         }
     }
     public  void addTransaction(String name, double transactionAmount){
+        Customer customer= getCustomer(name);
+        if (customer!=null){
+            customer.transactions().add(transactionAmount);
+        }
+    }
 
+    public void printStatement(String customerName){
+        Customer customer=getCustomer(customerName);
+        if (customer==null){
+            return;
+        }
+        System.out.println("-".repeat(30));
+        System.out.println("Customer Name: "+ customer.name());
+        System.out.println("Transactions: ");
+        for (double d: customer.transactions()){
+            System.out.printf("$%10.2f (%s)%n",d,d<0 ? "debit" : "credit ");
+        }
     }
 }
