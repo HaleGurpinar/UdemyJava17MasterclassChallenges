@@ -2,9 +2,9 @@ package Abstraction;
 
 public abstract class ProductForSale {
 
-    private String type;
-    private double price;
-    private String description;
+    protected String type;
+    protected double price;
+    protected String description;
 
     public ProductForSale(String type, double price, String description) {
         this.type = type;
@@ -13,6 +13,13 @@ public abstract class ProductForSale {
     }
 
     public double getSalesPrice(int qty){
-        return qty * this.price;
+        return qty * price;
     }
+
+    public void printPricesItem(int qty){
+        System.out.printf("%2d qty at $%8.2f each,  %-15s %-35s %n",
+                qty,price,type,description);
+    }
+
+    public abstract void showDetails();
 }
