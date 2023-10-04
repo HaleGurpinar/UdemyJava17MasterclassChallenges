@@ -4,7 +4,7 @@ enum Geometry{
     LINE,POINT,POLYGON
 }
 enum Color{BLACK,BLUE,GREEN, WHITE,RED}
-enum PointMarkers{CIRCLE,DIAMOND,STAR,TRIANGLE}
+enum PointMarkers{CIRCLE,DIAMOND,STAR,TRIANGLE,PUSH_PIN}
 enum LineMarkers{DASHED,DOTTED,SOLID}
 public interface Mappable {
 
