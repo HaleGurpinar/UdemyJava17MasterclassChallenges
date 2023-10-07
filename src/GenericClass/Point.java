@@ -1,4 +1,4 @@
 package GenericClass;
 
-public abstract class Point {
+public abstract class Point implements Mappable{
 }
