@@ -1,6 +1,8 @@
 package GenericClass;
 
-public abstract class Line implements Mappable{
+import java.util.Arrays;
+
+abstract class Line implements Mappable{
     private double[][] locations;
     public Line(String... locations){
         this.locations=new double[locations.length][];
@@ -11,13 +13,13 @@ public abstract class Line implements Mappable{
     }
     private String locations(){
 
-        return "";
+        return Arrays.deepToString(locations);
     }
 
 
 
     @Override
     public void render() {
-
+        System.out.println("Render "+ this + "as LINE ("+ locations()+ ")");
     }
 }

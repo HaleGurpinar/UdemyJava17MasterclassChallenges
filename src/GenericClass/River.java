@@ -3,8 +3,15 @@ package GenericClass;
 public class River extends Line{
 
     private String name;
-    @Override
-    public void render() {
 
+    public River(String name,String... locations) {
+        super(locations);
+        this.name = name;
     }
+
+    @Override
+    public String toString() {
+        return name + "River";
+    }
+
 }

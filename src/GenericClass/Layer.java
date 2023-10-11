@@ -2,11 +2,11 @@ package GenericClass;
 
 import java.util.List;
 
-public class Layer <Elements>{
+public class Layer <T extends Mappable>{
 
-    private List<Elements> layerElements;
+    private List<T> layerElements;
 
-    public Elements addElement(Elements e){
+    public T addElement(T e){
 
     }
 

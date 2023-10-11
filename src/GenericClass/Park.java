@@ -4,12 +4,13 @@ public class Park extends Point{
 
     private String name;
 
-    public Park(String location) {
+    public Park(String name,String location) {
         super(location);
+        this.name = name;
     }
 
     @Override
-    public void render() {
-
+    public String toString() {
+        return name + "National Park";
     }
 }

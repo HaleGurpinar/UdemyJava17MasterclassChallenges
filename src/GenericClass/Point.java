@@ -2,7 +2,7 @@ package GenericClass;
 
 import java.util.Arrays;
 
-public abstract class Point implements Mappable{
+abstract class Point implements Mappable{
 
     private double[] location= new double[2];
     private String location(){
