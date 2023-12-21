@@ -1,4 +1,4 @@
-package Collection_CardGame.poker;
+package Collection_CardGame;
 
 import java.util.ArrayList;
 import java.util.Comparator;

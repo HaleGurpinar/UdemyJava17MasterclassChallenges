@@ -1,13 +1,12 @@
 
-package Collection_CardGame.poker;
+package Collection_CardGame.games.poker;
 
-import Collection_CardGame.poker.Card;
+import Collection_CardGame.Card;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-import java.util.*;
 
 public class PokerHand {
 

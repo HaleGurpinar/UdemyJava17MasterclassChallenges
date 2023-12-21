@@ -1,4 +1,4 @@
-package Collection_CardGame.poker;
+package Collection_CardGame.games.poker;
 
 public enum Ranking {
 

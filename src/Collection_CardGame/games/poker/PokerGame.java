@@ -1,7 +1,6 @@
+package Collection_CardGame.games.poker;
 
-
-import Collection_CardGame.poker.Card;
-import Collection_CardGame.poker.PokerHand;
+import Collection_CardGame.Card;
 
 
 import java.util.*;

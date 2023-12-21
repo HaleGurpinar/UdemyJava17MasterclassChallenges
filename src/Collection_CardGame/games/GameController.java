@@ -1,5 +1,7 @@
-package Collection_CardGame.poker;
-//import  Collection_CardGame.poker.PokerGame;
+package Collection_CardGame.games;
+
+import Collection_CardGame.games.poker.PokerGame;
+
 public class GameController {
 
     public static void main(String[] args) {

@@ -2,8 +2,6 @@
 package Collection_CardGame;
 
 
-import Collection_CardGame.poker.Card;
-
 import java.util.*;
 
 public class Main {
