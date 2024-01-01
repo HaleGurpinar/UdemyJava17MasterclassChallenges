@@ -5,25 +5,25 @@ public class BookingAgent {
 
         int rows = 10;
         int totalSeats = 100;
-        Theatre rodgersNYC = new Theatre("Hale Gurpinar",
+        Theatre gurpinarsNYC = new Theatre("Hale Gurpinars",
                 rows, totalSeats);
 
-        rodgersNYC.printSeatMap();
+        gurpinarsNYC.printSeatMap();
 
-        bookSeat(rodgersNYC, 'A', 3);
-        bookSeat(rodgersNYC, 'A', 3);
+        bookSeat(gurpinarsNYC, 'A', 3);
+        bookSeat(gurpinarsNYC, 'A', 3);
 
-        bookSeat(rodgersNYC, 'B', 1);
-        bookSeat(rodgersNYC, 'B', 11);
-        bookSeat(rodgersNYC, 'M', 1);
+        bookSeat(gurpinarsNYC, 'B', 1);
+        bookSeat(gurpinarsNYC, 'B', 11);
+        bookSeat(gurpinarsNYC, 'M', 1);
 
-        bookSeats(rodgersNYC, 4, 'B', 3, 10);
-        bookSeats(rodgersNYC, 6, 'B', 'C', 3, 10);
-        bookSeats(rodgersNYC, 4, 'B', 1, 10);
-        bookSeats(rodgersNYC, 4, 'B', 'C', 1, 10);
-        bookSeats(rodgersNYC, 1, 'B', 'C', 1, 10);
-        bookSeats(rodgersNYC, 4, 'M', 'Z', 1, 10);
-        bookSeats(rodgersNYC, 10, 'A', 'E', 1, 10);
+        bookSeats(gurpinarsNYC, 4, 'B', 3, 10);
+        bookSeats(gurpinarsNYC, 6, 'B', 'C', 3, 10);
+        bookSeats(gurpinarsNYC, 4, 'B', 1, 10);
+        bookSeats(gurpinarsNYC, 4, 'B', 'C', 1, 10);
+        bookSeats(gurpinarsNYC, 1, 'B', 'C', 1, 10);
+        bookSeats(gurpinarsNYC, 4, 'M', 'Z', 1, 10);
+        bookSeats(gurpinarsNYC, 10, 'A', 'E', 1, 10);
     }
 
     private static void bookSeat(Theatre theatre, char row, int seatNo) {
