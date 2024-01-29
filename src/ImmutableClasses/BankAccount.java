@@ -2,13 +2,13 @@ package ImmutableClasses;
 
 public class BankAccount {
 
-    public enum AccountType{CHECKING, SAVING}
+    public enum AccountType{CHECKING, SAVINGS}
 
     private final AccountType accountType;
 
     private final double balance;
 
-    public BankAccount(AccountType accountType, double balance) {
+     BankAccount(AccountType accountType, double balance) {
         this.accountType = accountType;
         this.balance = balance;
     }
