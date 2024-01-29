@@ -1,4 +1,4 @@
 package ImmutableClasses;
 
-public class Challenge {
+public class BankCustomer {
 }
