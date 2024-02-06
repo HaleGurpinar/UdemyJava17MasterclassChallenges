@@ -28,7 +28,6 @@ public class Main {
         transactions.forEach((k, v) -> System.out.println(k + ": " + v));
 
 
-
         joe.getAccount(BankAccount.AccountType.CHECKING).getTransactions().clear();
         System.out.println("------------------");
         joe.getAccount(BankAccount.AccountType.CHECKING).getTransactions()
