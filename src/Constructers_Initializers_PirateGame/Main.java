@@ -1,6 +1,7 @@
 package Constructers_Initializers_PirateGame;
 
 import Constructers_Initializers_PirateGame.pirate.Pirate;
+import Constructers_Initializers_PirateGame.pirate.PirateGame;
 import Constructers_Initializers_PirateGame.pirate.Weapon;
 
 public class Main {
@@ -21,5 +22,13 @@ public class Main {
 
         Pirate lily = new Pirate("Lily");
         System.out.println(lily);
+
+        PirateGame.getTowns(0).forEach(System.out::println);
+        System.out.println("---------------------------------------");
+        PirateGame.getTowns(1).forEach(System.out::println);
+
+        var console = new GameConsole<>(new PirateGame("The Pirate Game"));
+        int playerIndex = console.addPlayer();
+        console.playGame(playerIndex);
     }
 }
