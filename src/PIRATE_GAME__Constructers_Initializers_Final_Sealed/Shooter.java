@@ -1,4 +1,4 @@
-package Constructers_Initializers_PirateGame;
+package PIRATE_GAME__Constructers_Initializers_Final_Sealed;
 
 public record Shooter(String name) implements Player {
 

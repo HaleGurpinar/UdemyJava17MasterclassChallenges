@@ -1,4 +1,4 @@
-package Constructers_Initializers_PirateGame.pirate;
+package PIRATE_GAME__Constructers_Initializers_Final_Sealed.pirate;
 
 import java.util.ArrayList;
 import java.util.EnumSet;

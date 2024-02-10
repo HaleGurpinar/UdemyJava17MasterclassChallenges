@@ -1,4 +1,4 @@
-package Constructers_Initializers_PirateGame;
+package PIRATE_GAME__Constructers_Initializers_Final_Sealed;
 
 import java.util.Scanner;
 
