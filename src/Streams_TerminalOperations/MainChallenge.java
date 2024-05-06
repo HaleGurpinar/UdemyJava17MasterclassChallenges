@@ -1,6 +1,8 @@
 package Streams_TerminalOperations;
 
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
@@ -26,12 +28,39 @@ public class MainChallenge {
         int topPercent = (int) (1.25 * avePercent);
         System.out.printf("Best Percentage Complete = %d%% %n", topPercent);
 
+        Comparator<Student> longTermStudent = Comparator.comparing(Student::getYearEnrolled);
+
         List<Student> hardWorkers = students.stream()
                 .filter(s-> s.getMonthsSinceActive("JMC")==0)
                 .filter(s-> s.getPercentComplete("JMC")> topPercent)
+                .sorted(longTermStudent)
+                .limit(10)
                 .toList();
-        System.out.println("hardWorkers =  "+ hardWorkers.size());
+       // System.out.println("hardWorkers =  "+ hardWorkers.size());
 
+        hardWorkers.forEach(s -> {
+            s.addCourse(jgames);
+            System.out.println(s);
+        });
 
+        hardWorkers.forEach(s -> {
+            s.addCourse(jgames);
+            System.out.print(s.getStudentId() + " ");
+        });
+        System.out.println();
+
+        //Same sol. with just streams
+        students.stream()
+                .filter(s-> s.getMonthsSinceActive("JMC")==0)
+                .filter(s-> s.getPercentComplete("JMC")> topPercent)
+                .sorted(longTermStudent)
+                .limit(10)
+//                .toList()
+//                .collect(Collectors.toList())
+                .collect(Collectors.toSet())
+                 .forEach(s -> {
+            s.addCourse(jgames);
+            System.out.print(s.getStudentId() + " ");
+        });
     }
 }

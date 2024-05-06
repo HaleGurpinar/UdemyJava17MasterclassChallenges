@@ -103,7 +103,7 @@ public class Student {
     }
 
     public static Student getRandomStudent(Course... courses){
-        int maxYear = LocalDate.now().getYear()+ 1;
+        int maxYear = LocalDate.now().getYear()+1;
         Student student= new Student(
                 getRandomVal("AU","CA","GB","TR","US"),
                 random.nextInt(2015,maxYear),
